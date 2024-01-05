@@ -1,3 +1,11 @@
 README
 ===========================
-練習用專案azza，身分認證module
+Project : azza , module : authentitation , ( for practice )
+* * *
+## Contents
+* Steps to build
+* * *
+## Steps to build
+```
+1. Import project
+```
