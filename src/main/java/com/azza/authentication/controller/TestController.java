@@ -8,15 +8,20 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @RestController
-@RequestMapping(name="/test")
+@RequestMapping("/test")
 public class TestController {
 	
-	@GetMapping(name="/log")
+	@GetMapping("/log")
 	public String testLog() {
 		log.info("Test >>> start");
 		log.trace("Testing...");
 		log.info("Test >>> end");
 		return "ok";
+	}
+	
+	@GetMapping("/ok")
+	public String test() {
+		return "test controller";
 	}
 
 	public static void main(String[] args) {
